@@ -1,8 +1,7 @@
-
 # Cognee Starter Kit
 Welcome to the <a href="https://github.com/topoteretes/cognee">cognee</a> Starter Repo! This repository is designed to help you get started quickly by providing a structured dataset and pre-built data pipelines using cognee to build powerful knowledge graphs.
 
-You can use this repo to ingest, process, and visualize data in minutes. 
+You can use this repo to ingest, process, and visualize data in minutes.
 
 By following this guide, you will:
 
@@ -68,7 +67,7 @@ Custom model uses custom pydantic model for graph extraction. This script catego
 python src/pipelines/custom-model.py
 ```
 
-## Graph preview 
+## Graph preview
 
 cognee provides a visualize_graph function that will render the graph for you.
 
@@ -88,6 +87,25 @@ GRAPHISTRY_USERNAME=""
 GRAPHISTRY_PASSWORD=""
 ```
 Note: `GRAPHISTRY_PASSWORD` is API key.
+
+## Trace
+
+Cognee supports Langfuse tracing to help you monitor and debug your workflows.
+
+To enable tracing:
+
+1. Create an account and obtain your API keys at [Langfuse](https://langfuse.com/).
+   *(Alternatively, you can self-host Langfuse by following the instructions at [Langfuse Self-Hosting](https://langfuse.com/self-hosting))*
+
+2. Add the following environment variables to your `.env` file:
+
+    ```env
+    LANGFUSE_PUBLIC_KEY=""
+    LANGFUSE_SECRET_KEY=""
+    LANGFUSE_HOST=""
+    ```
+
+Make sure to replace the empty strings with your actual Langfuse credentials.
 
 
 # What will you build with cognee?
