@@ -9,3 +9,6 @@ requires-python = ">=3.10, <=3.13"
 dependencies = [
     "cognee>=0.1.38",
 ]
+
+[project.optional-dependencies]
+neptune = ["langchain_aws>=0.2.27"]
